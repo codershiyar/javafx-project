@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="288.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.groep9D.BetabitApp.GebruikerAanmakenController">
+    <Label alignment="CENTER" prefHeight="63.0" prefWidth="288.0" styleClass="title" text="Gebruiker Aanmaken">
+    </Label>
+    <Line endX="288.0" endY="78.0" layoutY="-15.0" startX="-1.0" startY="78.0" stroke="#e15c96" strokeWidth="3.0" />
+    <Button layoutX="30.0" layoutY="307.0" mnemonicParsing="false" onAction="#onAanmaakKnop" prefHeight="29.0" prefWidth="174.0" styleClass="menuKnopje" text="Gebruiker aanmaken" />
+    <TextField fx:id="naamVeld" layoutX="33.0" layoutY="125.0" prefHeight="25.0" prefWidth="218.0" />
+    <TextField fx:id="gebruikersnaamVeld" layoutX="33.0" layoutY="187.0" prefHeight="25.0" prefWidth="218.0" />
+    <PasswordField fx:id="wachtwoordVeld" layoutX="33.0" layoutY="244.0" prefHeight="25.0" prefWidth="218.0" />
+    <CheckBox fx:id="beheerderKnop" layoutX="33.0" layoutY="273.0" mnemonicParsing="false" styleClass="inputLabel" text="Is de gebruiker een beheerder?" textFill="#383838">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+        <opaqueInsets>
+            <Insets />
+        </opaqueInsets>
+        <padding>
+            <Insets bottom="6.0" right="30.0" top="6.0" />
+        </padding>
+    </CheckBox>
+    <Label layoutX="34.0" layoutY="99.0" styleClass="inputLabel" text="Naam" />
+    <ImageView fitWidth="50.0" layoutX="8.0" layoutY="457.0" onMouseClicked="#onTerugKnopClick" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../icons/terug_icon.png" />
+    </ImageView>
+    <Label layoutX="34.0" layoutY="160.0" styleClass="inputLabel" text="Gebruikersnaam" />
+    <Label layoutX="34.0" layoutY="221.0" styleClass="inputLabel" text="Wachtwoord" />
+    <Label fx:id="foutmelding" layoutX="85.0" layoutY="357.0" prefHeight="40.0" prefWidth="149.0" text="Niet alles is ingevuld!" textFill="darkred" visible="false" />
+    <Line endX="288.0" endY="78.0" layoutY="373.0" startX="-1.0" startY="78.0" stroke="#e15c96" strokeWidth="3.0" />
+</Pane>

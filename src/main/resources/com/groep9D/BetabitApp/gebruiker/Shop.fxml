@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="288.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.groep9D.BetabitApp.ShopController">
+    <Pane>
+        <Label alignment="CENTER" prefHeight="66.0" prefWidth="288.0" styleClass="title" text="Shop">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+            <padding>
+                <Insets bottom="10.0" top="10.0" />
+            </padding>
+        </Label>
+        <ImageView fitHeight="66" fitWidth="66.0" onMouseClicked="#onTerugButtonClick" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../icons/terug_icon.png" />
+        </ImageView>
+    </Pane>
+    <VBox spacing="10">
+        <Line endX="288.0" endY="66.0" startY="66.0" stroke="#e15c96" strokeWidth="3.0" />
+        <ScrollPane prefHeight="434.0">
+            <VBox fx:id="prijzen" alignment="CENTER" prefWidth="275" spacing="10" />
+        </ScrollPane>
+    </VBox>
+</VBox>

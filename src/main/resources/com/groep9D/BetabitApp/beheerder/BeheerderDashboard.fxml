@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="288.0" styleClass="layout_background" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.groep9D.BetabitApp.BeheerderDashboardController">
+    <Label alignment="CENTER" layoutX="-26.0" layoutY="-2.0" prefHeight="63.0" prefWidth="288.0" styleClass="title" text="Beheerder Dashboard">
+        <font>
+            <Font name="System Bold" size="24.0" />
+        </font>
+    </Label>
+    <Button layoutY="300.0" mnemonicParsing="false" onAction="#onNieuwVoertuigKnop" prefHeight="25.0" styleClass="menuKnopje" text="Nieuw voertuig toevoegen" />
+    <Button alignment="CENTER" layoutY="250.0" mnemonicParsing="false" onAction="#onAanmaakKnop" styleClass="menuKnopje" text="Nieuwe gebruiker toevoegen" />
+    <Button layoutY="400.0" mnemonicParsing="false" onAction="#onGebruikersBeherenKnop" prefHeight="25.0" styleClass="menuKnopje" text="Gebruikers beheren" />
+    <Button layoutY="350.0" mnemonicParsing="false" onAction="#onGebruikersWeergevenKnop" prefHeight="25.0" styleClass="menuKnopje" text="Gebruikers weergeven" />
+    <Button layoutY="450.0" mnemonicParsing="false" onAction="#onRanglijstKnop" prefHeight="25.0" styleClass="menuKnopje" text="Ranglijst" />
+    <Line endX="288.0" endY="78.0" layoutY="-20.0" startX="-1.0" startY="77.0" stroke="#e15c96" strokeWidth="3.0" />
+    <ImageView fitHeight="80.0" fitWidth="40.0" layoutX="223.0" layoutY="-11.0" onMouseClicked="#onUitlogKnopClick" pickOnBounds="true" preserveRatio="true" translateX="10.0" translateY="20.0">
+        <Image url="@../icons/uitloggen_icon.png" />
+    </ImageView>
+</Pane>

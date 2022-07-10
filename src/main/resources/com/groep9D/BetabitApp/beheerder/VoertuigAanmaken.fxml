@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="288.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.groep9D.BetabitApp.VoertuigAanmakenController">
+    <ImageView fitWidth="50.0" layoutX="10.0" layoutY="463.0" onMouseClicked="#onTerugKnopClick" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../icons/terug_icon.png" />
+    </ImageView>
+    <Line endX="288.0" endY="78.0" layoutY="385.0" startX="-1.0" startY="78.0" stroke="#e15c96" strokeWidth="3.0" />
+    <Label alignment="CENTER" layoutX="1.0" prefHeight="63.0" prefWidth="288.0" styleClass="title" text="Voertuig Aanmaken" />
+    <Line endX="288.0" endY="78.0" layoutY="-15.0" startX="-1.0" startY="78.0" stroke="#e15c96" strokeWidth="3.0" />
+    <Label layoutX="34.0" layoutY="146.0" styleClass="inputLabel" text="Hoeveel CO2 verbruikt het voertuig " />
+    <Label layoutX="32.0" layoutY="168.0" styleClass="inputLabel" text=" in gram per km?" />
+    <Label layoutX="33.0" layoutY="222.0" prefHeight="25.0" styleClass="inputLabel" text=" Wat voor voertuig is het?" />
+    <TextField fx:id="gramPerKMVeld" layoutX="32.0" layoutY="191.0" prefHeight="25.0" prefWidth="221.0" />
+    <TextField fx:id="naamVoertuigVeld" layoutX="34.0" layoutY="254.0" prefHeight="25.0" prefWidth="221.0" />
+    <Button layoutX="84.0" layoutY="359.0" mnemonicParsing="false" onAction="#onVoertuigAanmakenKnop" styleClass="menuKnopje" text="Voertuig aanmaken" />
+    <Label fx:id="foutmeldingGeenGetal" layoutX="35.0" layoutY="300.0" prefHeight="17.0" prefWidth="221.0" text="null" visible="false" />
+    <Label fx:id="foutmeldingLegeVelden" layoutX="35.0" layoutY="330.0" prefHeight="17.0" prefWidth="221.0" text="null" visible="false" />
+     <ComboBox fx:id="brandstoffen" cache="true" layoutX="30.0" layoutY="93.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="29.0" prefWidth="231.0" promptText="Voertuig brandstof" styleClass="groenKnopje" />
+
+</Pane>

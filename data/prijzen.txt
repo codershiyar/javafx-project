@@ -1,0 +1,12 @@
+Vakantiedag
+file:src/main/resources/com/groep9D/BetabitApp/icons/prijs.png
+Eén vakantiedag
+100
+Vakantiedagen
+file:src/main/resources/com/groep9D/BetabitApp/icons/prijs2.png
+Twee vakantiedagen
+175
+Vakantiedagen
+file:src/main/resources/com/groep9D/BetabitApp/icons/prijs.png
+Drie vakantiedagen
+250

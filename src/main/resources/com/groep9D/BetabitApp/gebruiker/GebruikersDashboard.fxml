@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="288.0" styleClass="layout_background" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.groep9D.BetabitApp.GebruikersDashboardController">
+    <ImageView fitHeight="512.0" fitWidth="288.0" pickOnBounds="true" preserveRatio="true" styleClass="title" />
+    <Label alignment="CENTER" prefHeight="66.0" prefWidth="288.0" styleClass="title" text="Dashboard">
+        <font>
+            <Font name="Agency FB" size="24.0" />
+        </font>
+        <padding>
+            <Insets bottom="10.0" top="10.0" />
+        </padding>
+        <styleClass>
+            <String fx:value="title" />
+        </styleClass>
+    </Label>
+    <Rectangle arcHeight="75.0" arcWidth="75.0" fill="#e15c96" height="132.0" layoutX="44.0" layoutY="190.0" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0" />
+    <Rectangle arcHeight="25.0" arcWidth="25.0" fill="WHITE" height="40.0" layoutX="74.0" layoutY="261.0" stroke="#ff4a5c" strokeType="INSIDE" strokeWidth="0.0" width="140.0" />
+    <VBox alignment="CENTER" layoutX="65.0" layoutY="199.0" prefHeight="106.0" prefWidth="158.0">
+        <Label text="Jouw punten" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+            <VBox.margin>
+                <Insets bottom="32.0" />
+            </VBox.margin>
+        </Label>
+        <Label fx:id="aantalPunten" alignment="CENTER" prefHeight="20.0" prefWidth="120.0" text="0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+    </VBox>
+    <Rectangle fx:id="shadow" fill="#e15c96" height="512.0" opacity="0.5" visible="false" width="288.0" />
+    <VBox fx:id="menu" layoutX="-238.0" prefHeight="512.0" prefWidth="238.0" styleClass="layout_background">
+        <Label alignment="CENTER" prefHeight="66.0" prefWidth="288.0" styleClass="title" text="Keuzemenu">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+            <padding>
+                <Insets bottom="10.0" left="54.0" top="10.0" />
+            </padding>
+            <VBox.margin>
+                <Insets bottom="30.0" />
+            </VBox.margin>
+            <styleClass>
+                <String fx:value="title" />
+            </styleClass>
+        </Label>
+        <HBox prefHeight="80.0" prefWidth="238.0">
+            <ImageView fitHeight="66.0" fitWidth="38.0" onMouseClicked="#onPunteninvoerButtonClick" pickOnBounds="true" preserveRatio="true" translateX="10.0" translateY="20.0">
+                <Image url="@../icons/punteninvoer_icon.png" />
+                <viewport>
+                    <Rectangle2D />
+                </viewport>
+            </ImageView>
+            <Label onMouseClicked="#onPunteninvoerButtonClick" prefHeight="80.0" prefWidth="158.0" styleClass="option" text="Kilometerinvoer" translateX="20.0">
+                <font>
+                    <Font size="18.0" />
+                </font>
+                <padding>
+                    <Insets left="10.0" />
+                </padding>
+            </Label>
+        </HBox>
+        <HBox prefHeight="80.0" prefWidth="238.0">
+            <ImageView fitHeight="80.0" fitWidth="80.0" onMouseClicked="#onGrafiekButtonClick" pickOnBounds="true" preserveRatio="true" translateX="5.0">
+                <Image url="@../icons/grafiek_icon.png" />
+            </ImageView>
+            <Label onMouseClicked="#onGrafiekButtonClick" prefHeight="80.0" prefWidth="100.0" styleClass="option" text="Grafiek" translateX="10.0">
+                <font>
+                    <Font size="18.0" />
+                </font>
+                <padding>
+                    <Insets left="10.0" />
+                </padding>
+            </Label>
+        </HBox>
+        <HBox prefHeight="80.0" prefWidth="238.0">
+            <ImageView fitHeight="80.0" fitWidth="38.0" onMouseClicked="#onRanglijstButtonClick" pickOnBounds="true" preserveRatio="true" translateX="10.0" translateY="20.0">
+                <Image url="@../icons/ranglijst_icon.png" />
+            </ImageView>
+            <Label onMouseClicked="#onRanglijstButtonClick" prefHeight="80.0" prefWidth="158.0" styleClass="option" text="Ranglijst" translateX="30.0">
+                <font>
+                    <Font size="18.0" />
+                </font>
+                <padding>
+                    <Insets left="10.0" />
+                </padding>
+            </Label>
+        </HBox>
+        <HBox prefHeight="80.0" prefWidth="238.0">
+            <ImageView fitHeight="80.0" fitWidth="38.0" onMouseClicked="#onShopButtonClick" pickOnBounds="true" preserveRatio="true" translateX="10.0" translateY="20.0">
+                <Image url="@../icons/shop_icon.png" />
+            </ImageView>
+            <Label onMouseClicked="#onShopButtonClick" prefHeight="80.0" prefWidth="158.0" styleClass="white-option" text="Shop" translateX="30.0">
+                <font>
+                    <Font size="18.0" />
+                </font>
+                <padding>
+                    <Insets left="10.0" />
+                </padding>
+            </Label>
+        </HBox>
+        <HBox prefHeight="80.0" prefWidth="238.0">
+            <ImageView fitHeight="80.0" fitWidth="38.0" onMouseClicked="#onUitloggenButtonClick" pickOnBounds="true" preserveRatio="true" translateX="10.0" translateY="20.0">
+                <Image url="@../icons/uitloggen_icon.png" />
+            </ImageView>
+            <Label onMouseClicked="#onUitloggenButtonClick" prefHeight="80.0" prefWidth="158.0" styleClass="white-option" text="Uitloggen" translateX="30.0">
+                <font>
+                    <Font size="18.0" />
+                </font>
+                <padding>
+                    <Insets left="10.0" />
+                </padding>
+            </Label>
+        </HBox>
+    </VBox>
+    <Line endX="288.0" endY="66.0" startY="66.0" />
+    <ImageView fitHeight="80.0" fitWidth="38.0" layoutX="6.0" layoutY="14.0" onMouseClicked="#onToggleMenuButtonClick" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../icons/menu_icon.png" />
+    </ImageView>
+</Pane>

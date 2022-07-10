@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="288.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.groep9D.BetabitApp.PunteninvoerController">
+    <ImageView fitHeight="512.0" fitWidth="288.0" pickOnBounds="true" preserveRatio="true" />
+    <Label alignment="CENTER" layoutX="33.0" prefHeight="66.0" prefWidth="255.0" styleClass="title" text="Kilometerinvoer">
+        <font>
+            <Font name="System Bold" size="24.0" />
+        </font>
+        <padding>
+            <Insets bottom="10.0" top="10.0" />
+        </padding>
+    </Label>
+    <Line endX="288.0" endY="66.0" startY="66.0" stroke="#e15c96" strokeWidth="3.0" />
+    <ImageView fitWidth="50.0" layoutX="6.0" layoutY="8.0" onMouseClicked="#onTerugButtonClick" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../icons/terug_icon.png" />
+    </ImageView>
+    <VBox alignment="TOP_CENTER" layoutX="29.0" layoutY="123.0" prefHeight="29.0" prefWidth="217.0" styleClass="groenKnopje">
+        <ComboBox fx:id="voertuigenSelectOpties" cache="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="29.0" prefWidth="218.0" promptText="Vervoersmiddel" styleClass="groenKnopje" />
+    </VBox>
+    <Label layoutX="39.0" layoutY="166.0" text="Kilometers : " translateX="-3.0" translateY="-3.0">
+        <padding>
+            <Insets bottom="3.0" left="2.0" right="8.0" top="3.0" />
+        </padding>
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+    <TextField fx:id="kilometerInvoerVeld" layoutX="27.0" layoutY="200.0" prefHeight="25.0" prefWidth="217.0" promptText="Voer hier km in getallen in" />
+    <Label fx:id="kilometerFoutmelding" layoutX="-2.0" layoutY="403.0" prefHeight="31.0" prefWidth="243.0" styleClass="foutMeldingLabel" text="De kilometerinvoer is geen geldige invoer!" textFill="WHITE" visible="false">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+        <padding>
+            <Insets bottom="5.0" left="21.0" right="13.0" top="5.0" />
+        </padding>
+    </Label>
+    <Button layoutX="31.0" layoutY="256.0" mnemonicParsing="false" onAction="#onToevoegenButtonClick" styleClass="menuKnopje" text="Toevoegen" />
+    <Label fx:id="vervoersmiddelFoutmelding" layoutX="-2.0" layoutY="369.0" prefHeight="31.0" prefWidth="243.0" styleClass="foutMeldingLabel" text="Fout: Er is geen vervoersmiddel gekozen!" textFill="WHITE" visible="false">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+        <padding>
+            <Insets bottom="5.0" left="21.0" right="13.0" top="5.0" />
+        </padding>
+    </Label>
+   <Label fx:id="succesBericht" layoutX="8.0" layoutY="379.0" prefHeight="31.0" prefWidth="243.0" styleClass="groenKnopje" text="Data is opgeslagen" textFill="WHITE" visible="false">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+      <padding>
+         <Insets bottom="5.0" left="21.0" right="13.0" top="5.0" />
+      </padding>
+   </Label>
+</Pane>

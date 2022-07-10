@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="512.0" prefWidth="288.0" styleClass="loginContainer" xmlns="http://javafx.com/javafx/16"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.groep9D.BetabitApp.InlogpaginaController">
+    <stylesheets>
+        <URL value="@inlogpagina.css"/>
+    </stylesheets>
+    <opaqueInsets>
+        <Insets/>
+    </opaqueInsets>
+    <Label layoutX="19.0" layoutY="86.0" prefHeight="17.0" prefWidth="237.0" text="Gebruikersnaam" textFill="#56aaa4">
+        <font>
+            <Font name="System Bold" size="14.0"/>
+        </font>
+    </Label>
+    <TextField id="gebruikersnaamInvoer" fx:id="gebruikersnaamInvoer" layoutX="19.0" layoutY="117.0"
+               minWidth="-Infinity" prefHeight="25.0" prefWidth="169.0"/>
+    <Label layoutX="19.0" layoutY="151.0" prefHeight="17.0" prefWidth="197.0" text="Wachtwoord" textFill="#56aaa4">
+        <font>
+            <Font name="System Bold" size="14.0"/>
+        </font>
+    </Label>
+    <PasswordField id="wachtwoordInvoer" fx:id="wachtwoordInvoer" layoutX="19.0" layoutY="178.0" prefHeight="25.0"
+                   prefWidth="169.0"/>
+    <Button id="inloggenKnopje" layoutX="19.0" layoutY="275.0" mnemonicParsing="false" onAction="#onInlogButtonClick"
+            text="inloggen" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="14.0"/>
+        </font>
+    </Button>
+    <Label fx:id="foutmeldingLabel" alignment="CENTER" layoutY="30.0" mnemonicParsing="true" prefHeight="17.0"
+           prefWidth="320.0" style="-fx-background-color: #e15c96;" text="Fout, probeer het nogmaals" textFill="WHITE"
+           visible="false">
+        <font>
+            <Font name="System Bold" size="14.0"/>
+        </font>
+        <padding>
+            <Insets bottom="5.0" top="5.0"/>
+        </padding>
+    </Label>
+</AnchorPane>
